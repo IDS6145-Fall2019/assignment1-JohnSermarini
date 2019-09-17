@@ -1,8 +1,7 @@
-# Assignment 1 - Designing Models and Analyzing Data (Template)
-(remove: **text between brackets to be removed**)
+# Assignment 1 - Designing Models and Analyzing Data
 
-> * Participant name: (your name)
-> * Project Title: (Title of the problem you are looking and modeling)
+> * Participant name: John "The King" Sermarini
+> * Project Title: Simulation of Moving Walkways in United States Subway Systems
 
 # General Introduction
 
@@ -15,12 +14,15 @@ The second part of the assignment explores data analysis. Data analysis and visu
 
 # Part 1: Designing a Model - Subway System
 
-(remove: States your motivation clearly: why is it important / interesting to solve this problem?)
+We are looking at the issue of the improving the efficiency of subway systems in the United States by introducing moving walkways to densely populated subway routes. By improving passenger movement speed, we can reduce overall time passengers spend underground which will lead to reduced congestion.
 
-(remove: Add real-world examples, if any)
+Currently, moving walkways in the United States are found mostly in airports and amusement parks, and are seldom seen within subway stations. They are more common internationally, with some notable examples being the London Underground's Bank Station and multiple stations on Hong Kong's MTR. 
 
-(remove: Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
+![Moving walkway in an airport](images/movingwalkway1.jpg)
 
+![Moving walkway in a park](images/movingwalkway2.jpg)
+
+Although the first commerical moving walkway was in a Jersey City railroad station, many moving walkways at United States transit stations have either been removed or do not recieve suitable maintence from subway employees. 
 
 ![Image of Subway City System](images/subway_model.png)
 
