@@ -1,28 +1,19 @@
-# Assignment 1 - Designing Models and Analyzing Data (Template)
-(remove: **text between brackets to be removed**)
+# Assignment 1 - Designing Models and Analyzing Data
 
-> * Participant name: (your name)
-> * Project Title: (Title of the problem you are looking and modeling)
+> * Participant name: John "The King" Sermarini
+> * Project Title: Improving United States Border Crossing Queuing
 
-# General Introduction
+# Part 1: Designing a Model - Border Crossing
 
-The first part of this assignment explores designing models (and basic Python/Git features). 
+We will be looking at addressing the issues surrounding lengthy queuing times when entering the United States through the Mexican border at various check points along the southern border of the United States. Using simulation, we can improve the efficiency and reduce wait times by testing various queuing techniques and configurations.
 
-We will look at **subway model in a city** system. A **subway system** is an underground, tube, or metro, underground railway system used to transport large numbers of passengers within urban and suburban areas - modern subways use different types of electronic data collection sensors to supply information which is used to manage assets and resources efficiently. 
+There are many border crossing locations along the southern border, most notably in Texas in the cities of El Paso, Brownsvillie, and Laredo.
 
-The second part of the assignment explores data analysis. Data analysis and visualization is key to both the input and output of simulations. This assignment explores different random number generators, distributions, visualizations, and statistics. Additionally, it will look at getting you accustomed to specifying input and output variables to a system. We will also practice working with real data.
+This is a problem that has existed for many year, but not much has been put into improving the situation on the Mexico side. With increased security by the Trump administration, the problem will most likely on grow. By improving the current system and reducing wait times, commercial and passenger vehicles wait times can pass through more quickly. You know the old saying, time is money :)
 
+Data can be sources from https://bwt.cbp.gov/
 
-# Part 1: Designing a Model - Subway System
-
-(remove: States your motivation clearly: why is it important / interesting to solve this problem?)
-
-(remove: Add real-world examples, if any)
-
-(remove: Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
-
-
-![Image of Subway City System](images/subway_model.png)
+![Image of Mexican Border](images/mexicanborder.png)
 
 ## (Part 1.1): Requirements (Experimental Design) **(10%)**
 
