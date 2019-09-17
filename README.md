@@ -13,7 +13,7 @@ This is a problem that has existed for many year, but not much has been put into
 
 Data can be sources from https://bwt.cbp.gov/
 
-![Image of Mexican Border](images/mexicanborder.png)
+![Image of Mexican Border](images/mexicanborder.jpg)
 
 ## (Part 1.1): Requirements (Experimental Design) **(10%)**
 
