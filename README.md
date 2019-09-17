@@ -14,21 +14,38 @@ The second part of the assignment explores data analysis. Data analysis and visu
 
 # Part 1: Designing a Model - Subway System
 
+(remove: States your motivation clearly: why is it important / interesting to solve this problem?)
 We are looking at the issue of the improving the efficiency of subway systems in the United States by introducing moving walkways to densely populated subway routes. By improving passenger movement speed, we can reduce overall time passengers spend underground which will lead to reduced congestion.
 
+(remove: Add real-world examples, if any)
 Currently, moving walkways in the United States are found mostly in airports and amusement parks, and are seldom seen within subway stations. They are more common internationally, with some notable examples being the London Underground's Bank Station and multiple stations on Hong Kong's MTR. 
+
+(remove: Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
+Although the first commerical moving walkway was in a Jersey City railroad station, many moving walkways at United States transit stations have either been removed or do not recieve suitable maintence from subway employees. 
 
 ![Moving walkway in an airport](images/movingwalkway1.jpg)
 
 ![Moving walkway in a park](images/movingwalkway2.jpg)
 
-Although the first commerical moving walkway was in a Jersey City railroad station, many moving walkways at United States transit stations have either been removed or do not recieve suitable maintence from subway employees. 
-
-![Image of Subway City System](images/subway_model.png)
 
 ## (Part 1.1): Requirements (Experimental Design) **(10%)**
 
 (remove: You should start by specifying a set of requirements. I specified a topic a Subway escalator. What exactly does that mean - practice formulating your own set of requirements and an experiment. Define problems cities face and hypothesize how a subway system could help alleviate these issue. This helps you think about your problem communication and system objectives inputs, functions, and outputs - they should be clearly specified.)
+Our model is designed to test the impact of introducing moving walkways into subway stations and measuring their impact on passenger throughput. Our objective is to create a model that will reduce passenger travel time enough to justify the cost of implementing and maintaining these walkways.
+
+To help identify how our model can be tested and improved, we have decided to break it down into seperate groups of inputs and outputs.
+Inputs:
+* Number of passengers
+* Passenger routes
+* Moving walkway positions
+* Number of moving walkways
+* Length of moving walkways
+* Width of moving walkways
+* Speed of moving walkways
+* Moving walkway style (is the right side reserved for standing?)
+Outputs:
+* Total time spent by passengers by route
+
 
 ## (Part 1.2) Subway (My Problem) Model **(10%)**
 
