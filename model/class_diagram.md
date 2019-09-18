@@ -1,1 +1,3 @@
-![Class Diagram](../../images/ClassDiagram.png)
+## **C**lass **D**iagram
+
+![Class diagram](../../images/ClassDiagram.png)
