@@ -35,23 +35,11 @@ Although the first commerical moving walkway was in a Jersey City railroad stati
 
 (remove: You should start by specifying a set of requirements. I specified a topic a Subway escalator. What exactly does that mean - practice formulating your own set of requirements and an experiment. Define problems cities face and hypothesize how a subway system could help alleviate these issue. This helps you think about your problem communication and system objectives inputs, functions, and outputs - they should be clearly specified.)
 
-Our model is designed to test the impact of introducing moving walkways into subway stations and measuring their impact on passenger throughput. Our objective is to create a model that will reduce passenger travel time enough to justify the cost of implementing and maintaining these walkways.
+Our model is designed to test the impact of introducing moving walkways into subway stations and measuring their impact on passenger throughput. Our objective is to create a model that will reduce passenger travel time enough to justify the cost of implementing and maintaining these walkways. We theorize that the introduction of the moving walkways will decrease average total spent by passenegers in subway stations by increasing their movemeent speed, but at the cost of increased maintenece costs incured by the station.
 
-To help identify how our model can be tested and improved, we have decided to break it down into seperate groups of inputs and outputs.
-
-Inputs:
-* Number of passengers
-* Passenger routes
-* Moving walkway positions
-* Number of moving walkways
-* Length of moving walkways
-* Width of moving walkways
-* Speed of moving walkways
-* Moving walkway style (is the right side reserved for standing?)
-
-Outputs:
-* Total time spent by passengers by route
-* Total cost of implementation
+Requirements:
+* The model shall decrease average total time passengers spend at the subway station by a minimum of 10%.
+* The total cost of the system shall be within the budget of the station. 
 
 
 ## (Part 1.2) Subway (My Problem) Model **(10%)**
@@ -67,6 +55,25 @@ Outputs:
 ## (Part 1.3) Subway (My Problem) Simulation **(10%)**
 
 (remove: Describe how you would simulate this - including type of simulation, rough details, inputs, outputs, and how it will help you analyze your experimental hypothesis, or nullify your null hypothesis.)
+
+
+We plan to simulate this model using **Python**. We have chosen this method because recreating our classes and methods in it will be incredibly easy using Python's expansive user created libraries and tool kits.  The simulation will be a discrete simulation depicting passenger objects transitions between states of walking on walkways, walking off walkways, being idle, etc...
+
+To help define a set of requirements and identify how our model can be tested and improved, we have decided to break it down into seperate groups of inputs and outputs. We plan to test a variety of different walkway and passeneger configurations to reached our desired outcome.
+
+Inputs:
+* Number of passengers
+* Passenger routes
+* Moving walkway positions
+* Number of moving walkways
+* Length of moving walkways
+* Width of moving walkways
+* Speed of moving walkways
+* Moving walkway style (is the right side reserved for standing?)
+
+Outputs:
+* Total time spent by passengers by route
+* Total cost of implementation
 
 
 ## (Part 1.4) Subway City (My Problem) Model **(10%)**

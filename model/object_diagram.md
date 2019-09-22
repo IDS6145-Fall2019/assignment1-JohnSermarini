@@ -1,13 +1,7 @@
-## Smart City (My Problem) Model - Object Diagram
+## Subway Walkway Model - Object Diagram
 
-(remove: provide a description of the current model you describe below)
 
-(remove: use images!!!)
-(remove: I added an example image to illustrate [**how to use Markdown**](https://guides.github.com/features/mastering-markdown/), maybe consider a tool like [**Haroodpad**](http://pad.haroopress.com/user.html) )
+This model shows how the different objects within the system will be organized. The **Station** class represents the subway station and contains all other elements of the system within it. The people in the subways station are represented by the **Passenger** class. Passenegers travel along paths represented by **PassengerRoute** and on top of walkways represented by **Walkway**. **Position** is used to track where along along the route and within the station the passeneger is, which helps track how effective the walkways are at speeding up movement.
 
-![Example Object Diagram](../images/class_example_diagram.png)
 
-(remove: More decription)
-(remove: Maybe a second or third diagram to highlight a point or aspect)
-
-(remove: each diagram markdown file should roughly follow this template)
+![Class diagram](../images/ObjectDiagram.png)
