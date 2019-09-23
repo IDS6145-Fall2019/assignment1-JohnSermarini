@@ -126,6 +126,9 @@ The top row shows the psuedo random number sand the bottom shows the quasi rando
 
 ## (Part 3.3) -  Plotting 1D Random Distributions **(15%)**
 
-Now, choose three different distributions to plot in 1D, or as a histogram. Choose a pseudo-random generator and generate three different distributions. Example distributions are Uniform (part 8), Normal, Exponential, Poisson, and Chi-Squared, but feel free to use any three distributions of your choice. Again, plot each distribution for five different Ns. This will result in 15 different subplots, formatted similar to the image in Part 8. Include your properly formmated 1D plots below and breifly describe what we are looking at and how things change as N is changed.
 
-Repeat the above using a quasi-random generator. Discuss the similarities and differences.
+The following graphs were generated using different psuedo random number methods, all taken from the **Numpy** library. The top row uses **Uniform** distribution, the middle **Normal** distribution, and the bottom **Logistic** distribution. We can see that as N increases, the graphs increasingly resemble how the distributions are supposed to look. Uniform becomes more equal, Normal becomes more normally distributed, and Logistic becomes more equal.
+
+Note: The Y-Axis labels are a little wonky. The data is legit, but I had to work a little trickery to make the graphs appear square and uniform.
+
+![Number Gen](images/Psuedo.png)
