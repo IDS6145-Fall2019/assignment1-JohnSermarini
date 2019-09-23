@@ -84,13 +84,25 @@ You are expected to create the python files - the code should run without errors
 
 ## (Part 1.5) Specifying the Inputs to a System **(10%)**
 
-(remove the below points once ideas are satisfied)
-* Specify the independent and dependent input variables of your subway esclator model
-* Specify where the data will come from measured subset of real data (empirical) or synthetic data
-* What kind of statistics are important to capture this input data
-* How do you plan to analyze the output of your model?
-* What ways will you visualize your data - charts, and graphs you will create?
-* What clever way will you visualize your output with a useful infographic?
+To create an accurate and effective model, we must implement real world data. We could manually collect data by tracking information a particular subway station. This can include the paths the passengers take, passenger quantity at different times of the day, and travel length of the different routes. If possible, we could use data colleted during previous studies or just look at the general flow of the population in the city the station is located in. Looking at mean travel times would be ideal as it can be easily measured and useful in determining how effective our model actually is at reducing travel time.
+
+Visualization of our model would be helpful, but the most important part is the data regarding travel times. We could create a Python GUI or 3D simulation showing passengers moving around if it was deemed essential. A more effective means of determining our model's usefullness would be through visualization of data using graphs. Line, scatter, or raincloud plots could show the movement time reduction of different configurations of the system along with that configuration's cost of implementation. When the most efficient and effective walkway configuration is found, an infographic could be created to show the population how it would reduce travel time and what it would look like when implemented.
+
+Independant Variables:
+* Passengers
+	* Quantity
+	* Route traveled
+	* Speed
+* Walkways
+	* Quantity
+	* Length
+	* Width
+	* Speed
+	* Style 
+
+Dependant Variables:
+* Cost of implementation
+* Total travel time for passenegers
 
 
 
