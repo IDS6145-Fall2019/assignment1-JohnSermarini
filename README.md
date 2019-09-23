@@ -121,20 +121,20 @@ The top row shows the psuedo random number sand the bottom shows the quasi rando
 
 * Python Sobol Sequences : https://pypi.org/project/sobol_seq/
 
-![Number Gen](images/NumGen.png)
+![Number Gen](images/NumGen.PNG)
 
 
 ## (Part 3.3) -  Plotting 1D Random Distributions **(15%)**
 
 The following graphs were generated using different psuedo random number methods, all taken from the **Numpy** library. The top row uses **Uniform** distribution, the middle **Normal** distribution, and the bottom **Logistic** distribution. We can see that as N increases, the graphs increasingly resemble how the distributions are supposed to look. Uniform becomes more equal, Normal becomes more normally distributed, and Logistic becomes more flat.
 
-![Number Gen](images/Psuedo.png)
+![Number Gen](images/Psuedo.PNG)
 
 The following graphs were generated using different quasi random number methods. The top row was generated using the **Sobol** sequence using the same library from part 3.2. The middle row was generated using the **Halton**, taken from the library below. The bottom row uses the same **Halton** sequence as the middle row, just using different dimensions. We can see that as N increases, the histograms maintain their quasi random patters, but they become more uniformally distributed.
 
 * Python Sobol Sequences : https://pypi.org/project/sobol_seq/
 * Halton Sequence: https://pypi.org/project/ghalton/
 
-![Number Gen](images/Quasi.png)
+![Number Gen](images/Quasi.PNG)
 
 Note: Axis labels are a little wonky. The data is legit, but I had to work a little trickery to make the graphs appear square and uniform.
