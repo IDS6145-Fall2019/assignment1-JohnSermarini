@@ -117,7 +117,7 @@ https://catalog.data.gov/dataset/subway-entrances
 ## (Part 3.2) -  Plotting 2D Random Number Generators **(15%)**
 
 
-The top row shows the psuedo random number sand the bottom shows the quasi random numbers. The psuedo random numbers were generated using numpy's **rand()** function, and the quasi random numbers were generated using Sobol Sequences from the library linked below. The most notable difference between the two methods is the clear pattern exhibited by the quasi random method. The sequence has an almost intentional textured look, while the psuedo random numbers eem to not follow any set pattern.
+The top row shows the psuedo random number sand the bottom shows the quasi random numbers. The psuedo random numbers were generated using numpy's **rand()** function, and the quasi random numbers were generated using Sobol Sequences from the library linked below. The most notable difference between the two methods is the clear pattern exhibited by the quasi random method. The sequence has an almost intentional textured look, while the psuedo random numbers seem to not follow any set pattern.
 
 * Python Sobol Sequences : https://pypi.org/project/sobol_seq/
 
@@ -126,9 +126,15 @@ The top row shows the psuedo random number sand the bottom shows the quasi rando
 
 ## (Part 3.3) -  Plotting 1D Random Distributions **(15%)**
 
-
-The following graphs were generated using different psuedo random number methods, all taken from the **Numpy** library. The top row uses **Uniform** distribution, the middle **Normal** distribution, and the bottom **Logistic** distribution. We can see that as N increases, the graphs increasingly resemble how the distributions are supposed to look. Uniform becomes more equal, Normal becomes more normally distributed, and Logistic becomes more equal.
-
-Note: The Y-Axis labels are a little wonky. The data is legit, but I had to work a little trickery to make the graphs appear square and uniform.
+The following graphs were generated using different psuedo random number methods, all taken from the **Numpy** library. The top row uses **Uniform** distribution, the middle **Normal** distribution, and the bottom **Logistic** distribution. We can see that as N increases, the graphs increasingly resemble how the distributions are supposed to look. Uniform becomes more equal, Normal becomes more normally distributed, and Logistic becomes more flat.
 
 ![Number Gen](images/Psuedo.png)
+
+The following graphs were generated using different quasi random number methods. The top row was generated using the **Sobol** sequence using the same library from part 3.2. The middle row was generated using the **Halton**, taken from the library below. The bottom row uses the same **Halton** sequence as the middle row, just using different dimensions. We can see that as N increases, the histograms maintain their quasi random patters, but they become more uniformally distributed.
+
+* Python Sobol Sequences : https://pypi.org/project/sobol_seq/
+* Halton Sequence: https://pypi.org/project/ghalton/
+
+![Number Gen](images/Quasi.png)
+
+Note: Axis labels are a little wonky. The data is legit, but I had to work a little trickery to make the graphs appear square and uniform.

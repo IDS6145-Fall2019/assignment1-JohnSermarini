@@ -2,13 +2,15 @@ import sys
 import numpy as np
 import matplotlib.pyplot as plt
 import sobol_seq
+import ghalton
 
 n = [100, 500, 1000, 2000, 5000]
 
 
 def main(argv):
-	#Plot3_1()
-	Plot3_2()
+	Plot3_1()
+	Plot3_2_Psuedo()
+	Plot3_2_Quasi()
 
 
 def Plot3_1():
@@ -36,7 +38,7 @@ def Plot3_1():
 	plt.show()
 
 
-def Plot3_2():
+def Plot3_2_Psuedo():
 	numRows = 3
 
 	fig = plt.figure(figsize=(20,10))
@@ -64,6 +66,42 @@ def Plot3_2():
 		axes.hist(x, bins=100, normed=1)
 
 	plt.show()
+
+
+def Plot3_2_Quasi():
+	numRows = 3
+
+	fig = plt.figure(figsize=(20,10))
+
+	for i in range(0, len(n) * numRows):
+		axes = fig.add_subplot(numRows, len(n), i + 1)
+		axes.set_aspect(1.)
+		axes.set_title("N = " + str(n[i % len(n)]))
+
+		x = []
+		y = []
+		if(i < (len(n) * numRows) / 3): # Sobol
+			seq = sobol_seq.i4_sobol_generate(2, n[i % len(n)])
+			for s in seq:
+				x.append(s[0] * 2)
+				axes.set_xlim([0, 2.0])
+				axes.set_ylim([0, 2.0])
+		elif(i >= (len(n) * numRows) / 3 and i < 2 * ((len(n) * numRows) / 3)): # Halton
+			seq = ghalton.Halton(5).get(n[i % len(n)])
+			for s in seq:
+				x.append(s[4] * 2)
+				axes.set_xlim([0, 2.0])
+				axes.set_ylim([0, 2.0])
+		else: #  Halton (again)
+			seq = ghalton.Halton(20).get(n[i % len(n)])
+			for s in seq:
+				x.append(s[19] * 2)
+				axes.set_xlim([0, 2.0])
+				axes.set_ylim([0, 2.0])
+		axes.hist(x, bins=100, normed=1)
+
+	plt.show()
+
 
 if __name__ == "__main__":
     main(sys.argv[1:])
