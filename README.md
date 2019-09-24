@@ -100,18 +100,31 @@ Here [**we provide an overview**](code/POTS_system/README.md) of the **P**ortabl
 
 ## (Part 3.1) - Real Data **(10%)**
 
-Find a datasource that looks at part of this model - subway stations locations / escalator number, heights, widths / volume of passangers - ridership numbers   (*fits* - we are pretty loose here, it can be anything.)
+To help track the routes of passengers, we have decided to use data describing the latitude and longitude of all subway entrances in New York City, sourced from the link below.
 
-https://catalog.data.gov/dataset/subway-entrances
+This data is helpful for our model because it will assist us in creating realistic routes that passengers at the subway stations will walk. By making more realistic routes, we can have a more accurate model. We can use statistics to help us determine the distance between these stations and other variables that will help us create more useful walkways.
 
-* Write up a paragraph that describes the data and how it fits into your system.
-* Load the data into Python
-* Calculate a few useful statistic on the data - keep it simple- STD, means, etc..., this is just designed * to get used to working with real data. Explain the insights you derive from these statistics.
-* Visualize the raw data - visualize a few critical aspects of the data to better describe what it is, what it is showing, and why its useful to your system.
-* Calculate and plot some summary statistics that better describe the data.
+To analyze and plot this data, we have created a **Python** script titled [**DataReader.py**](code/DataReader.py). Running this script's **main()** will read in the subway data, print the statistics listed below to the console, and generate the top down lat-long plot.
 
-(Add your plots and visualization here)
-(Put your data into the data directory)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Standard Deviation:
+X:  0.06584022229371969
+Y:  0.0746605793776825
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mean:
+X:  -73.9488611090275
+Y:  40.730016365843106
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Median:
+X:  -73.96009749985149
+Y:  40.731125501136546
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+![Number Gen](images/Map.PNG)
+
+* Data Source: https://catalog.data.gov/dataset/subway-entrances
 
 
 ## (Part 3.2) -  Plotting 2D Random Number Generators **(15%)**

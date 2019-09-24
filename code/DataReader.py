@@ -1,5 +1,7 @@
 import sys
 import csv
+import numpy
+import matplotlib.pyplot as plt
 
 fileName = "data.csv"
 
@@ -10,27 +12,53 @@ def main(argv):
 	with open(fileName, newline='') as csvfile:
 		csvReader = csv.reader(csvfile, quotechar='|')	
 		for row in csvReader:
-			#points.append(row[3])
+			# Strip Point from csv
 			csvPoint = row[3] # POINT (x y)
 			csvPoint = csvPoint[7:] # x y)
 			csvPoint = csvPoint[:-1] # x y
-			#print(csvPoint.split(" "))
-			i = 0
-			x = -1
-			y = -1
-			for p in csvPoint.split(" "):
-				if(i == 0):
-					x = p.strip()
-				else:
-					y = float(p.strip())
-				i = i + 1
-			print("x: ", x, " ~~~~ y: ", y)
+			split = csvPoint.split(" ")
 
-			#x = csvPoint.split(" ")[0]
-			#y = csvPoint.split(" ")[1]
-			#print("x: ", x, " ~~~~ y: ", y)
-			#csvPoints = csvPoint.split(" ")
-			#points.append(Point(csvPoints[0], csvPoints[1]))
+			# Determine if csv has empty value
+			if(len(split) < 2):
+				continue
+
+			# Record data
+			x = float(split[0])
+			y = float(split[1])
+			points.append(Point(x, y))
+
+	xSTD = numpy.std([p.GetX() for p in points])
+	xMean = numpy.mean([p.GetX() for p in points])
+	xMedian = numpy.median([p.GetX() for p in points])
+	ySTD = numpy.std([p.GetY() for p in points])
+	yMean = numpy.mean([p.GetY() for p in points])
+	yMedian = numpy.median([p.GetY() for p in points])
+
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+	print("Standard Deviation: ")
+	print("X: ", xSTD)
+	print("Y: ", ySTD)
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+	print("Mean: ")
+	print("X: ", xMean)
+	print("Y: ", yMean)
+	print("~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+	print("Median: ")
+	print("X: ", xMedian)
+	print("Y: ", yMedian)
+
+	PlotEntrances([p.GetX() for p in points], [p.GetY() for p in points])
+
+
+def PlotEntrances(x, y):
+	fig = plt.figure(figsize=(10,10))
+	ax = plt.gca()
+	ax.set_aspect(1.)
+	ax.set_aspect('equal', adjustable='box')
+	ax.set_title("Map of NYC Subway Entrances")
+	ax.grid(c='black')
+	ax.scatter(x, y, s=10.0, c='#f25746')
+	plt.show()
 
 
 class Point:
@@ -38,10 +66,10 @@ class Point:
 		self.x = x
 		self.y = y
 
-	def GetX():
+	def GetX(self):
 		return self.x
 
-	def GetY():
+	def GetY(self):
 		return self.y
 
 
