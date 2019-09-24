@@ -107,17 +107,17 @@ This data is helpful for our model because it will assist us in creating realist
 To analyze and plot this data, we have created a **Python** script titled [**DataReader.py**](code/DataReader.py). Running this script's **main()** will read in the subway data, print the statistics listed below to the console, and generate the top down lat-long plot.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Standard Deviation:
+Standard Deviation
 X:  0.06584022229371969
 Y:  0.0746605793776825
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Mean:
+Mean
 X:  -73.9488611090275
 Y:  40.730016365843106
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Median:
+Median
 X:  -73.96009749985149
 Y:  40.731125501136546
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

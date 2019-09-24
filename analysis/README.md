@@ -1,9 +1,5 @@
-## Smart City (My Problem) Simulation
+## Subway Moving Walkway Simulation
 
-(remove: Define what category  (or combination of categories) of simulation needed to solve this problem.)
+To simulate this model, it would be best to create a discrete simulation. Instances of the simultion could be ran using different configurations in passeneger quantity, speed, and walkway placement to reach an ideal conclusion and test our hypothesis that it would be a worthwhile implementation. In future iterations of this model, passenger AI could be improved to create a more Agent-Based system.
 
-(remove: Why did you choose this simulation type?)
-
-(remove: Roughly, how would you conduct the simulation to produce the results from your specification?)
-
-(remove: images say 1000 words for you...)
+Information regarding the structure of the model can be found within the code folder.
